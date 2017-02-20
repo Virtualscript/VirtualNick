@@ -1,0 +1,209 @@
+<html>
+
+
+    <head>
+
+        <style>
+
+
+            * { box-sizing: border-box; }
+
+.video-background {
+
+  background: #000;
+
+  position: fixed;
+
+  top: 0; right: 0; bottom: 0; left: 0;
+
+  z-index: -99;
+
+}
+
+.video-foreground,
+
+.video-background iframe {
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  pointer-events: none;
+
+}
+
+.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+
+.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+
+.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+
+@media (min-aspect-ratio: 16/9) {
+
+  .video-foreground { height: 300%; top: -100%; }
+
+}
+
+@media (max-aspect-ratio: 16/9) {
+
+  .video-foreground { width: 300%; left: -100%; }
+
+}
+
+@media all and (max-width: 600px) {
+
+.vid-info { width: 50%; padding: .5rem; }
+
+.vid-info h1 { margin-bottom: .2rem; }
+
+}
+
+@media all and (max-width: 500px) {
+
+.vid-info .acronym { display: none; }
+
+}
+
+
+.content{
+
+    text-align: center;
+
+    color: #fff;
+
+    font-family: Calibri;
+
+    font-size: 3em;
+
+}
+
+
+h1{
+
+}
+
+
+hr{
+
+    border: none;
+
+    border-bottom: 0.1em solid #fff;
+
+    width: 25%;
+
+    margin: auto;
+
+    margin-bottom: 0.1em;
+
+}
+
+h1{
+
+    font-size: 1em;
+
+    margin-bottom: 0.3em;
+
+}
+
+.bordered{
+
+    margin: 0px;
+
+    display: inline;
+
+    padding-left: 0.2em;
+
+    padding-right: 0.2em;
+
+    font-size: 3em;
+
+    line-height: 2em;
+
+    margin: auto;
+
+    border: 0.2em solid #fff;
+
+}
+
+.content p{
+
+    font-size: 0.5em;
+
+    font-weight: bold;
+
+    animation: sizeUp 30s forwards linear;
+
+    transform-origin: 50% 50%;
+
+}
+
+
+@keyframes sizeUp{
+
+    0%{
+
+        transform: scale(0.5);
+
+        opacity: 0;
+
+    }
+
+    100%{
+
+        transform: scale(1);
+
+        opacity: 1;
+
+    }
+
+}
+
+        </style>
+
+    </head>
+
+    <body>
+
+<div class="video-background">
+
+    <div class="video-foreground">
+
+      <iframe https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&am...G-UmQ" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+
+  </div>
+
+
+  <div class="content">
+
+    <h1>Dein toller Spruch</h1>
+
+    <hr/>
+
+    <h1 class="bordered">TEXT MIT BOX</h1>
+
+
+    <p>
+
+        Name Eins<br />
+
+        Name Eins<br />
+
+        Name Eins<br />
+
+        Name Eins<br />
+
+    </p>
+
+      </div>
+
+</body>
+
+</html>
